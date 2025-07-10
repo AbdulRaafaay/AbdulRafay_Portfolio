@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Certifications from "./pages/Certifications";
 // Future pages: Projects, Skills, Certificates, etc.
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <About />
           <Projects />
           <Skills />
+          <Certifications />
           {/* Add other pages here */}
         </main>
 
