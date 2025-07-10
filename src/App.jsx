@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Certifications from "./pages/Certifications";
-// Future pages: Projects, Skills, Certificates, etc.
+import Contact from "./pages/Contact"
 
 export default function App() {
   return (
@@ -19,10 +19,9 @@ export default function App() {
           <Projects />
           <Skills />
           <Certifications />
-          {/* Add other pages here */}
+          <Contact />
         </main>
-
-        <Footer /> {/* Always after all sections */}
+        <Footer />
       </div>
     </div>
   );

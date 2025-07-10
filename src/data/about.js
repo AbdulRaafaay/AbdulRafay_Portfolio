@@ -6,7 +6,7 @@ const about = {
 Currently pursuing the Google Cybersecurity Professional Certificate alongside the TryHackMe Junior Penetration Tester path, I am actively building a strong foundation in offensive security. My next goal is to dive into red teaming through TryHackMe and beyond, expanding my skills in advanced adversarial tactics and system exploitation.
 
 I believe in learning by doing, and I approach cybersecurity with a mindset of continuous improvement, ethical responsibility, and a drive to contribute to secure digital systems.`,
-  
+
   education: [
     {
       degree: "BS Cyber Security",
@@ -28,6 +28,17 @@ I believe in learning by doing, and I approach cybersecurity with a mindset of c
     "Ethical Practice",
     "Collaboration",
     "Continuous Learning",
+  ],
+
+  languages: [
+    {
+      name: "Urdu",
+      level: "Native",
+    },
+    {
+      name: "English",
+      level: "Fluent",
+    },
   ],
 };
 
