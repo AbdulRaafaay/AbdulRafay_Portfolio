@@ -1,6 +1,7 @@
 import contact from "../data/contact";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { SiUpwork } from "react-icons/si";
 
 export default function Contact() {
   return (
@@ -24,12 +25,15 @@ export default function Contact() {
 
       <div className="flex gap-6 text-white text-3xl">
         <a href={contact.github} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition">
-          <FaGithub />
+            <FaGithub />
         </a>
         <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition">
-          <FaLinkedin />
+            <FaLinkedin />
         </a>
-      </div>
+        <a href={contact.upwork} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition">
+            <SiUpwork />
+        </a>
+        </div>
     </section>
   );
 }

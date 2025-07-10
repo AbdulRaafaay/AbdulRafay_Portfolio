@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Certifications from "./pages/Certifications";
 import Contact from "./pages/Contact"
+import BackToTop from "./pages/BacktoTop";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Contact />
         </main>
         <Footer />
+        <BackToTop />
       </div>
     </div>
   );

@@ -46,6 +46,7 @@ export default function Home() {
           <i className="fab fa-linkedin"></i>
         </a>
       </div>
+      <div className="w-full h-[1px] bg-indigo-500/20 my-12"></div>
     </section>
   );
 }
