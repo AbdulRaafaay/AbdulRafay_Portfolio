@@ -1,4 +1,4 @@
-import home from "../data/Home";
+import home from "../data/home";
 
 export default function Home() {
   return (
