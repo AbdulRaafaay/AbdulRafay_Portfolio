@@ -14,7 +14,7 @@ export default function About() {
         <h3 className="text-2xl font-semibold text-white mb-4">Education</h3>
         <ul className="space-y-6">
           {about.education.map((edu, index) => (
-            <li key={index} className="bg-slate-800 p-5 rounded-md shadow">
+            <li key={index} className="bg-slate-800 p-5 rounded-md shadow hover:shadow-indigo-500/20 transition">
               <h4 className="text-xl font-medium text-white">{edu.degree}</h4>
               <p className="text-sm text-indigo-400">{edu.institution}</p>
               <p className="text-sm text-slate-400">{edu.dates} • {edu.location}</p>
@@ -28,7 +28,7 @@ export default function About() {
         <h3 className="text-2xl font-semibold text-white mb-4">Core Values</h3>
         <ul className="flex flex-wrap gap-3 text-slate-300">
           {about.values.map((value, idx) => (
-            <li key={idx} className="bg-slate-800 px-4 py-2 rounded-md text-sm">{value}</li>
+            <li key={idx} className="bg-slate-800 px-4 py-2 rounded-md text-sm shadow hover:shadow-indigo-500/20 transition">{value}</li>
           ))}
         </ul>
       </div>
@@ -45,7 +45,6 @@ export default function About() {
           ))}
         </ul>
       </div>
-      <div className="w-full h-[1px] bg-indigo-500/20 my-12"></div>
     </section>
   );
 }

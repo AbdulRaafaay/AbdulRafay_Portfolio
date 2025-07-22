@@ -1,8 +1,11 @@
 import home from "../data/home";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiUpwork, SiTryhackme } from "react-icons/si";
 
 export default function Home() {
   return (
     <section id="home" className="min-h-screen flex flex-col justify-center items-start px-6 sm:px-20">
+      <br />
       <p className="text-lg sm:text-xl text-indigo-400 mb-2">Hi, I'm</p>
       <h1 className="text-4xl sm:text-5xl font-bold mb-4">{home.name}</h1>
       <h2 className="text-xl sm:text-2xl font-medium text-slate-300 mb-6">
@@ -35,7 +38,7 @@ export default function Home() {
           rel="noopener noreferrer"
           className="hover:text-white transition"
         >
-          <i className="fab fa-github"></i>
+          <FaGithub />
         </a>
         <a
           href={home.socials.linkedin}
@@ -43,10 +46,25 @@ export default function Home() {
           rel="noopener noreferrer"
           className="hover:text-white transition"
         >
-          <i className="fab fa-linkedin"></i>
+          <FaLinkedin />
+        </a>
+        <a
+          href={home.socials.upwork}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition"
+        >
+          <SiUpwork />
+        </a>
+        <a
+          href={home.socials.tryhackme}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-white transition"
+        >
+          <SiTryhackme />
         </a>
       </div>
-      <div className="w-full h-[1px] bg-indigo-500/20 my-12"></div>
     </section>
   );
 }

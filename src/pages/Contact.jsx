@@ -1,7 +1,7 @@
 import contact from "../data/contact";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { SiUpwork } from "react-icons/si";
+import { SiUpwork,SiTryhackme } from "react-icons/si";
 
 export default function Contact() {
   return (
@@ -32,6 +32,9 @@ export default function Contact() {
         </a>
         <a href={contact.upwork} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition">
             <SiUpwork />
+        </a>
+        <a href={contact.tryhackme} target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition">
+            <SiTryhackme />
         </a>
         </div>
     </section>

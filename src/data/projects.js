@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "OWASP Juice Shop (Web App Pentest Lab)",
+    tech: "Kali Linux, Nmap, Burp Suite, SQLmap, ffuf, Wireshark",
+    date: "July 2025",
+    bullets: [
+      "Conducted end-to-end security testing on OWASP Juice Shop using industry-standard tools and methodologies.",
+      "Discovered critical vulnerabilities including SQL Injection, XSS, broken access control, and sensitive data exposure.",
+      "Exploited authentication flaws and privilege escalation via JWT manipulation and session fixation attacks.",
+      "Provided detailed security recommendations based on OWASP best practices to strengthen application security posture.",
+    ],
+  },
+  {
     title: "Vulnerability Assessment Lab (Metasploitable2)",
     tech: "Kali Linux, Nmap, Metasploit, Burp Suite, SQLmap",
     date: "July 2025",
