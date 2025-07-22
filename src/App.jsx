@@ -10,10 +10,10 @@ import BackToTop from "./pages/BacktoTop";
 
 export default function App() {
   return (
-    <div className="flex">
+    <div className="flex flex-col lg:flex-row">
       <Sidebar />
 
-      <div className="ml-64 w-full min-h-screen flex flex-col">
+      <div className="lg:ml-64 w-full min-h-screen flex flex-col">
         <main className="flex-grow">
           <Home />
           <About />
