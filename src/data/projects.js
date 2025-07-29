@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: "M57 Data Exfiltration Investigation",
+    tech: "FTK Imager, Outlook PST Viewer",
+    date: "July 2025",
+    bullets: [
+      "Conducted a full forensic investigation of a data breach using FTK Imager and Outlook PST analysis, tracing a leaked spreadsheet back to a spoofed email attack.",
+      "Analyzed file metadata, email headers, and disk images to reconstruct the timeline of exfiltration and identify the attacker’s deception technique.",
+      "Authored a 13-page forensic report with recommendations on email authentication (SPF, DKIM), 2FA enforcement, and phishing awareness training.",
+    ],
+  },
+  {
     title: "OWASP Juice Shop (Web App Pentest Lab)",
     tech: "Kali Linux, Nmap, Burp Suite, SQLmap, ffuf, Wireshark",
     date: "July 2025",

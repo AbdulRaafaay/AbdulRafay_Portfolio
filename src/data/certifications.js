@@ -1,5 +1,11 @@
 const certifications = [
   {
+    title: "Jr Penetration Tester Path",
+    platform: "TryHackMe",
+    date: "July 2025",
+    description: `Earned the TryHackMe Jr. Penetration Tester Certificate – hands-on training in web exploitation, network reconnaissance, Metasploit, and privilege escalation.`,
+  },
+  {
     title: "Foundations of Cybersecurity",
     platform: "Google (Coursera)",
     date: "July 2025",
