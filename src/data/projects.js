@@ -1,5 +1,16 @@
 const projects = [
   {
+    title: "Vulnerability Assessment Lab (Kioptrix)",
+    tech: "Kali Linux, Nmap, Nikto, Metasploit, GCC",
+    date: "Aug 2025",
+    bullets: [
+      "Performed full penetration testing on the Kioptrix vulnerable machine, including network discovery, service enumeration, and vulnerability research.",
+      "Exploited Apache mod_ssl 2.8.4 via the updated OpenFuck exploit to gain a remote shell.",
+      "Leveraged Samba 2.2.1a trans2open Metasploit module for direct root access.",
+      "Conducted post-exploitation by enumerating system users and confirming full administrative privileges.",
+    ],
+  },
+  {
     title: "M57 Data Exfiltration Investigation",
     tech: "FTK Imager, Outlook PST Viewer",
     date: "July 2025",

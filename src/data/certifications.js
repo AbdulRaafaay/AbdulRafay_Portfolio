@@ -1,5 +1,11 @@
 const certifications = [
   {
+    title: "Web Fundamentals Path",
+    platform: "TryHackMe",
+    date: "July 2025",
+    description: `Completed the TryHackMe Web Fundamentals Path – 21 hours of hands-on training covering HTTP basics, web vulnerabilities, authentication, and exploitation techniques.`,
+  },
+  {
     title: "Jr Penetration Tester Path",
     platform: "TryHackMe",
     date: "July 2025",
@@ -14,13 +20,13 @@ const certifications = [
   {
     title: "Cyber Security 101 Path",
     platform: "TryHackMe",
-    date: "4th July 2025",
+    date: "July 2025",
     description: `Completed a 45-hour learning path covering computer networking, cryptography, Linux, Windows, Active Directory, penetration testing, exploitation, monitoring, and incident response.`,
   },
   {
     title: "Pre Security Path",
     platform: "TryHackMe",
-    date: "17th June 2025",
+    date: "June 2025",
     description: `Completed foundational training in cybersecurity concepts, web & network weaknesses, common attack techniques, and Linux essentials.`,
   },
   {
