@@ -1,7 +1,18 @@
 const projects = [
   {
+    title: "HoneyShield: Virtual Honeypot Lab",
+    tech: "pfSense, Snort, OpenCanary, VirtualBox, Kali Linux",
+    date: "Aug 2025",
+    bullets: [
+      "Designed and deployed a layered honeynet with pfSense as a firewall/IDS gateway, Ubuntu Server hosting OpenCanary honeypots, and Snort for real-time intrusion detection.",
+      "Simulated attacker activity from Kali Linux including Nmap reconnaissance, SSH brute-force with Hydra, and HTTP probing.",
+      "Captured and correlated OpenCanary logs with Snort alerts to analyze attacker behavior and validate detection mechanisms.",
+      "Ensured complete isolation of the honeynet with pfSense routing enforcement, enabling safe forensic analysis without risking production systems.",
+    ],
+  },
+  {
     title: "Vulnerability Assessment Lab (Kioptrix)",
-    tech: "Kali Linux, Nmap, Nikto, Metasploit, GCC",
+    tech: "Kali Linux, Nmap, Nikto, Metasploit",
     date: "Aug 2025",
     bullets: [
       "Performed full penetration testing on the Kioptrix vulnerable machine, including network discovery, service enumeration, and vulnerability research.",
