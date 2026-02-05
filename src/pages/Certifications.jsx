@@ -1,6 +1,54 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Award } from 'lucide-react';
+import { Award, ChevronDown, ChevronUp } from 'lucide-react';
 import certificationsData from '../data/certifications';
+
+const CertificationCard = ({ cert, index }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxLength = 120;
+  const isLongText = cert.description.length > maxLength;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.05 }}
+      className="flex flex-col p-6 glass rounded-xl border border-gray-800 hover:border-cyan-500/50 hover:bg-slate-800 transition-all group h-full relative"
+    >
+      <div className="flex items-start gap-4 mb-4">
+         <div className="p-3 bg-slate-950 rounded-lg text-cyan-500 group-hover:bg-cyan-500 group-hover:text-white transition-colors shrink-0">
+           <Award size={24} />
+         </div>
+         <div>
+           <h3 className="font-bold text-white group-hover:text-cyan-400 transition-colors text-lg leading-tight">{cert.title}</h3>
+           <p className="text-sm text-gray-400 mt-1">{cert.platform}</p>
+         </div>
+      </div>
+      
+      <p className="text-sm text-gray-500 mb-4 italic">{cert.date}</p>
+      
+      <div className="mb-8">
+        <p className="text-sm text-gray-400 leading-relaxed">
+           {isExpanded || !isLongText ? cert.description : cert.description.substring(0, maxLength) + "..."}
+        </p>
+      </div>
+
+      {isLongText && (
+        <button 
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="absolute bottom-6 left-6 text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition-colors mt-auto"
+        >
+          {isExpanded ? (
+            <>Read Less <ChevronUp size={14} /></>
+          ) : (
+            <>Read More <ChevronDown size={14} /></>
+          )}
+        </button>
+      )}
+    </motion.div>
+  );
+};
 
 export default function Certifications() {
   return (
@@ -19,29 +67,7 @@ export default function Certifications() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificationsData.map((cert, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="flex flex-col p-6 glass rounded-xl border border-gray-800 hover:border-cyan-500/50 hover:bg-slate-800 transition-all group h-full"
-            >
-              <div className="flex items-start gap-4 mb-4">
-                 <div className="p-3 bg-slate-950 rounded-lg text-cyan-500 group-hover:bg-cyan-500 group-hover:text-white transition-colors shrink-0">
-                   <Award size={24} />
-                 </div>
-                 <div>
-                   <h3 className="font-bold text-white group-hover:text-cyan-400 transition-colors text-lg leading-tight">{cert.title}</h3>
-                   <p className="text-sm text-gray-400 mt-1">{cert.platform}</p>
-                 </div>
-              </div>
-              
-              <p className="text-sm text-gray-500 mb-4 italic">{cert.date}</p>
-              <p className="text-sm text-gray-400 leading-relaxed">
-                 {cert.description.length > 120 ? cert.description.substring(0, 120) + "..." : cert.description}
-              </p>
-            </motion.div>
+            <CertificationCard key={index} cert={cert} index={index} />
           ))}
         </div>
       </div>
